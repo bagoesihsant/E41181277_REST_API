@@ -20,4 +20,102 @@
    
    2. Setelah mendownload Code Igniter milik [ardisaurus](https://github.com/ardisaurus/ci-restserver), ekstrak dan letakkan pada folder htdocs.
       
+      ![ImageDokumentasi1]()
       
+   3. Kemudian buka folder tersebut dalam text editor anda.
+   
+   4. Setelah membuka dalam text editor, buka folder **application/config**, kemudian buka file **_autoload.php_**.
+      
+      ![ImageDokumentasi2]()
+      
+   5. Kemudian temukan baris yang berisi kode berikut :
+      ```php
+         $autoload['libraries'] = array()
+      ```
+   6. Kemudian ubah menjadi berikut :
+      ```php
+         $autoload['libraries'] = array('database')
+      ```
+   7. Fungsi kode tersebut adalah memuat library **_database_** untuk digunakan nantinya.
+   
+   8. Kemudian temukan baris yang berisi kode berikut :
+      ```php
+         $autoload['helper'] = array()
+      ```
+   9. Kemudian ubah menjadi berikut :
+      ```php
+         $autoload['helper'] = array('url')
+      ```
+   10. Fungsi kode tersebut adalah memuat library **_url_** untuk digunakan nantinya.
+   
+   11. Setelah selesai mengedit **_autoload.php_**, buka folder **application/config**, kemudian buka file **_config.php_**.
+       
+       ![ImageDokumentasi3]()
+       
+   12. Kemudian temukan baris kode berikut :
+       ```php
+          $config['base_url'] = '';
+       ```
+   13. Kemudian ubah isi dari kode tersebut menjadi link yang anda gunakan untuk membuka REST API Code Igniter, contoh :
+       ```php
+          $config['base_url'] = 'https://www.contohlinkbuka.com/';
+       ```
+   14. Fungsi dari mengisi kode tersebut adalah ketika anda menggunakan library **_url_** dan ingin mengetikkan link, anda tidak perlu lagi mengetikkan seluruh link melainkan hanya tinggal memanggil method **_base_url()_**.
+   
+   15. Setelah selesai mengedit **_config.php_**, buka folder **application/config**, kemudian buka file **_database.php_**.
+       
+       ![ImageDokumentasi4]()
+       
+   16. Kemudian temukan baris kode berikut :
+       ```php
+          $db['default'] = array(
+              'dsn'	=> '',
+              'hostname' => 'localhost',
+              'username' => '',
+              'password' => '',
+              'database' => '',
+              'dbdriver' => 'mysqli',
+              'dbprefix' => '',
+              'pconnect' => FALSE,
+              'db_debug' => (ENVIRONMENT !== 'production'),
+              'cache_on' => FALSE,
+              'cachedir' => '',
+              'char_set' => 'utf8',
+              'dbcollat' => 'utf8_general_ci',
+              'swap_pre' => '',
+              'encrypt' => FALSE,
+              'compress' => FALSE,
+              'stricton' => FALSE,
+              'failover' => array(),
+              'save_queries' => TRUE
+          );
+       ```
+   17. Kemudian ubah baris kode berikut sesuai username dan password database anda, kemudian isi bagian database dengan database yang ingin anda pakai, dalam kasus ini username saya adalah **root** dan tidak memliki password, serta database yang saya pakai adalah **kontak**.
+       ```php
+          $db['default'] = array(
+              'dsn'	=> '',
+              'hostname' => 'localhost',
+              'username' => 'root',
+              'password' => '',
+              'database' => 'kontak',
+              'dbdriver' => 'mysqli',
+              'dbprefix' => '',
+              'pconnect' => FALSE,
+              'db_debug' => (ENVIRONMENT !== 'production'),
+              'cache_on' => FALSE,
+              'cachedir' => '',
+              'char_set' => 'utf8',
+              'dbcollat' => 'utf8_general_ci',
+              'swap_pre' => '',
+              'encrypt' => FALSE,
+              'compress' => FALSE,
+              'stricton' => FALSE,
+              'failover' => array(),
+              'save_queries' => TRUE
+          );
+       ``` 
+  18. Fungsi dari kode tersebut adalah menyambungkan Code Igniter dengan database yang kita pilih dengan cara menginputkan nama database menggunakan username dan password yang kita berikan.
+  
+## Peggunaan
+   
+   
