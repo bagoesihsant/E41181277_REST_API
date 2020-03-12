@@ -21,13 +21,13 @@
    
    2. Setelah mendownload Code Igniter milik [ardisaurus](https://github.com/ardisaurus/ci-restserver), ekstrak dan letakkan pada folder htdocs.
       
-      ![ImageDokumentasi1]()
+      ![ImageDokumentasi1](https://github.com/bagoesihsant/E41181277_REST_API/blob/master/img_dokumentasi/Screenshot_Dokumentasi_1.png)
       
    3. Kemudian buka folder tersebut dalam text editor anda.
    
    4. Setelah membuka dalam text editor, buka folder **application/config**, kemudian buka file **_autoload.php_**.
       
-      ![ImageDokumentasi2]()
+      ![ImageDokumentasi2](https://github.com/bagoesihsant/E41181277_REST_API/blob/master/img_dokumentasi/Screenshot_Dokumentasi_2.png)
       
    5. Kemudian temukan baris yang berisi kode berikut :
       ```php
@@ -51,7 +51,7 @@
    
    11. Setelah selesai mengedit **_autoload.php_**, buka folder **application/config**, kemudian buka file **_config.php_**.
        
-       ![ImageDokumentasi3]()
+       ![ImageDokumentasi3](https://github.com/bagoesihsant/E41181277_REST_API/blob/master/img_dokumentasi/Screenshot_Dokumentasi_3.png)
        
    12. Kemudian temukan baris kode berikut :
        ```php
@@ -65,7 +65,7 @@
    
    15. Setelah selesai mengedit **_config.php_**, buka folder **application/config**, kemudian buka file **_database.php_**.
        
-       ![ImageDokumentasi4]()
+       ![ImageDokumentasi4](https://github.com/bagoesihsant/E41181277_REST_API/blob/master/img_dokumentasi/Screenshot_Dokumentasi_4.png)
        
    16. Kemudian temukan baris kode berikut :
        ```php
@@ -124,7 +124,7 @@
    
    1. Setelah selesai mengedit **_database.php_**, buka folder **application/controllers** kemudian buat file baru bernama **_Kontak.php_**.
       
-      ![ImageDokumentasi5]()
+      ![ImageDokumentasi5](https://github.com/bagoesihsant/E41181277_REST_API/blob/master/img_dokumentasi/Screenshot_Dokumentasi_5.png)
       
    2. Kemudian ketikkan kode berikut ini :
       ```php
@@ -211,58 +211,58 @@
       ```
    3. Setelah selesai mengedit **_Kontak.php_**. Buka aplikasi **Postman**, maka akan muncul tampilan seperti berikut :
       
-      ![ImageDokumentasi6]()
+      ![ImageDokumentasi6](https://github.com/bagoesihsant/E41181277_REST_API/blob/master/img_dokumentasi/Screenshot_Dokumentasi_6.png)
       
    4. Kemudian buat baru dekan menekan tombol **+**.
       
-      ![ImageDokumentasi7]()
+      ![ImageDokumentasi7](https://github.com/bagoesihsant/E41181277_REST_API/blob/master/img_dokumentasi/Screenshot_Dokumentasi_7.png)
       
    5. Maka akan muncul tampilan seperti berikut :
       
-      ![ImageDokumentasi8]()
+      ![ImageDokumentasi8](https://github.com/bagoesihsant/E41181277_REST_API/blob/master/img_dokumentasi/Screenshot_Dokumentasi_8.png)
       
    6. Untuk menjalankan method dari **Kontak.php**, kita perlu menggunakan **Postman**, pada langkah ini kita akan menajalankan method **_index_get()_**, maka pastikan **Postman** dalam mode **_GET_**, cara mengetahui **Postman** dalam mode apa dapat dilihat di gambar berikut :
       
-      ![ImageDokumentasi9]()
+      ![ImageDokumentasi9](https://github.com/bagoesihsant/E41181277_REST_API/blob/master/img_dokumentasi/Screenshot_Dokumentasi_8.png)
       
    7. Setelah memastikan **Postman** berjalan sesuai dengan mode **_GET_** masukkan URL web kita kedalam input **Postman** seperti gambar berikut ini :
       
-      ![ImageDokumentasi10]()
+      ![ImageDokumentasi10](https://github.com/bagoesihsant/E41181277_REST_API/blob/master/img_dokumentasi/Screenshot_Dokumentasi_9.png)
       
    8. Kemudian tekan _Send_. Maka akan muncul tampilan berikut dalam **Postman**.
       
-      ![ImageDokumentasi11]()
+      ![ImageDokumentasi11](https://github.com/bagoesihsant/E41181277_REST_API/blob/master/img_dokumentasi/Screenshot_Dokumentasi_10.png)
       
    9. Jika muncul tampilan seperti berikut, maka anda berhasil menjalankan method **_index_get()_**. Fungsi dari method **_index_get()_** adalah mengambil data dari database atau sama dengan query select.
    
    9. Setelah menjalankan method **_index_get()_**, kita akan menjalankan method **_index_post()_**, untuk menjalankan method ini pastikan mode **Postman** berada dalam mode **_POST_**, seperti berikut ini :
       
-      ![ImageDokumentasi12]()
+      ![ImageDokumentasi12](https://github.com/bagoesihsant/E41181277_REST_API/blob/master/img_dokumentasi/Screenshot_Dokumentasi_11.png)
    
   10. Setelah memastikan **Postman** dalam mode **_POST_**, klik bagian **_body_** dan pilih bagian **_x-www-form-urlencoded_** seperti berikut ini :
       
-      ![ImageDokumentasi13]()
+      ![ImageDokumentasi13](https://github.com/bagoesihsant/E41181277_REST_API/blob/master/img_dokumentasi/Screenshot_Dokumentasi_12.png)
       
   11. Kemudian ketikkan data yang ingin diinputkan, **KEY** berarti nama kolom dari tabel dan **VALUE** adalah data yang ingin kita kirim, maka ketikkan seperti berikut ini :
       
-      ![ImageDokumentasi14]()
+      ![ImageDokumentasi14](https://github.com/bagoesihsant/E41181277_REST_API/blob/master/img_dokumentasi/Screenshot_Dokumentasi_12.png)
       
   12. Kemudian tekan send, maka akan muncul tampilan seperti berikut :
       
-      ![ImageDokumentasi15]()
+      ![ImageDokumentasi15](https://github.com/bagoesihsant/E41181277_REST_API/blob/master/img_dokumentasi/Screenshot_Dokumentasi_13.png)
       
   13. Jika muncul tampilan seperti berikut maka anda telah berhasil menjalankan method **_index_post()_**. Fungsi dari method **_index_post()_** adalah menambahkan data dalam database atau sama dengan query insert.
   
   14. Setelah menjalankan method **_index_post()_**, kita akan menjalankan method **_index_put()_**, untuk menjalankan method ini pastikan mode **Postman** berada dalam mode **_PUT_**, seperti berikut ini :
       
-      ![ImageDokumentasi16]()
+      ![ImageDokumentasi16](https://github.com/bagoesihsant/E41181277_REST_API/blob/master/img_dokumentasi/Screenshot_Dokumentasi_14.png)
       
   15. Setelah memastikan **Postman** dalam mode **_PUT_**, pada bagian **body** dan **_x-www-form-urlencoded_**, isikan data yang ingin anda ubah dalam field **KEY** dan **VALUE** seperti berikut ini :
   
-      ![ImageDokumentasi17]()
+      ![ImageDokumentasi17](https://github.com/bagoesihsant/E41181277_REST_API/blob/master/img_dokumentasi/Screenshot_Dokumentasi_15.png)
       
   16. Kemudian tekand send, maka akan muncul tampilan seperti berikut :
       
-      ![ImageDokumentasi18]()
+      ![ImageDokumentasi18](https://github.com/bagoesihsant/E41181277_REST_API/blob/master/img_dokumentasi/Screenshot_Dokumentasi_16.png)
       
-  17. Jika muncul tampilan seperti berikut maka anda telah berhasil menjalankan method **_index_post()_**. Fungsi dari method **_index_put()_** adalah mengubah data dalam database atau sama dengan query update.
+  17. Jika muncul tampilan seperti berikut maka anda telah berhasil menjalankan method **_index_put()_**. Fungsi dari method **_index_put()_** adalah mengubah data dalam database atau sama dengan query update.
