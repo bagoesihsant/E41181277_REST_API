@@ -117,6 +117,8 @@
        ``` 
   18. Fungsi dari kode tersebut adalah menyambungkan Code Igniter dengan database yang kita pilih dengan cara menginputkan nama database menggunakan username dan password yang kita berikan.
   
+  19. Download [Postman](https://www.postman.com/) dan install.
+  
 ## Peggunaan
    Berikut ini adalah cara menggunakan REST API dalam Code Igniter :
    
@@ -207,5 +209,60 @@
          }
       ?>
       ```
+   3. Setelah selesai mengedit **_Kontak.php_**. Buka aplikasi **Postman**, maka akan muncul tampilan seperti berikut :
+      
+      ![ImageDokumentasi6]()
+      
+   4. Kemudian buat baru dekan menekan tombol **+**.
+      
+      ![ImageDokumentasi7]()
+      
+   5. Maka akan muncul tampilan seperti berikut :
+      
+      ![ImageDokumentasi8]()
+      
+   6. Untuk menjalankan method dari **Kontak.php**, kita perlu menggunakan **Postman**, pada langkah ini kita akan menajalankan method **_index_get()_**, maka pastikan **Postman** dalam mode **_GET_**, cara mengetahui **Postman** dalam mode apa dapat dilihat di gambar berikut :
+      
+      ![ImageDokumentasi9]()
+      
+   7. Setelah memastikan **Postman** berjalan sesuai dengan mode **_GET_** masukkan URL web kita kedalam input **Postman** seperti gambar berikut ini :
+      
+      ![ImageDokumentasi10]()
+      
+   8. Kemudian tekan _Send_. Maka akan muncul tampilan berikut dalam **Postman**.
+      
+      ![ImageDokumentasi11]()
+      
+   9. Jika muncul tampilan seperti berikut, maka anda berhasil menjalankan method **_index_get()_**. Fungsi dari method **_index_get()_** adalah mengambil data dari database atau sama dengan query select.
    
+   9. Setelah menjalankan method **_index_get()_**, kita akan menjalankan method **_index_post()_**, untuk menjalankan method ini pastikan mode **Postman** berada dalam mode **_POST_**, seperti berikut ini :
+      
+      ![ImageDokumentasi12]()
    
+  10. Setelah memastikan **Postman** dalam mode **_POST_**, klik bagian **_body_** dan pilih bagian **_x-www-form-urlencoded_** seperti berikut ini :
+      
+      ![ImageDokumentasi13]()
+      
+  11. Kemudian ketikkan data yang ingin diinputkan, **KEY** berarti nama kolom dari tabel dan **VALUE** adalah data yang ingin kita kirim, maka ketikkan seperti berikut ini :
+      
+      ![ImageDokumentasi14]()
+      
+  12. Kemudian tekan send, maka akan muncul tampilan seperti berikut :
+      
+      ![ImageDokumentasi15]()
+      
+  13. Jika muncul tampilan seperti berikut maka anda telah berhasil menjalankan method **_index_post()_**. Fungsi dari method **_index_post()_** adalah menambahkan data dalam database atau sama dengan query insert.
+  
+  14. Setelah menjalankan method **_index_post()_**, kita akan menjalankan method **_index_put()_**, untuk menjalankan method ini pastikan mode **Postman** berada dalam mode **_PUT_**, seperti berikut ini :
+      
+      ![ImageDokumentasi16]()
+      
+  15. Setelah memastikan **Postman** dalam mode **_PUT_**, pada bagian **body** dan **_x-www-form-urlencoded_**, isikan data yang ingin anda ubah dalam field **KEY** dan **VALUE** seperti berikut ini :
+  
+      ![ImageDokumentasi17]()
+      
+  16. Kemudian tekand send, maka akan muncul tampilan seperti berikut :
+      
+      ![ImageDokumentasi18]()
+      
+  17. Jika muncul tampilan seperti berikut maka anda telah berhasil menjalankan method **_index_post()_**. Fungsi dari method **_index_put()_** adalah mengubah data dalam database atau sama dengan query update.
