@@ -266,3 +266,17 @@
       ![ImageDokumentasi18](https://github.com/bagoesihsant/E41181277_REST_API/blob/master/img_dokumentasi/Screenshot_Dokumentasi_16.png)
       
   17. Jika muncul tampilan seperti berikut maka anda telah berhasil menjalankan method **_index_put()_**. Fungsi dari method **_index_put()_** adalah mengubah data dalam database atau sama dengan query update.
+  
+  18. Setelah menjalankan method **_index_put()_**, kita akan menjalankan method **_index_delete()_**, untuk menjalankan method ini pastikan mode **Postman** berada dalam mode **_DELETE_**, seperti berikut ini :
+      
+      ![ImageDokumentasi19](https://github.com/bagoesihsant/E41181277_REST_API/blob/master/img_dokumentasi/Screenshot_Dokumentasi_17.png)
+      
+  19. Setelah memastikan **Postman** dalam mode **_DELETE_**, klik bagian **body** dan **Params**, isikan data yang ingin anda hapus dalam field **KEY** dan **VALUE** seperti berikut ini :
+      
+      ![ImageDokumentasi20](https://github.com/bagoesihsant/E41181277_REST_API/blob/master/img_dokumentasi/Screenshot_Dokumentasi_18.png)
+      
+  20. Kemudian tekan, send maka akan muncul tampilan seperti berikut :
+      
+      ![ImageDokumentasi21](https://github.com/bagoesihsant/E41181277_REST_API/blob/master/img_dokumentasi/Screenshot_Dokumentasi_19.png)
+      
+  21. Jika muncul tampilan seperti berikut maka anda telah berhasil menjalankan method **_index_delete()_**. Fungsi dari method **_index_delete()_** adalah menghapus data dalam database atau sama dengan query delete
