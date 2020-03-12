@@ -13,6 +13,7 @@
    - [XAMPP](https://www.apachefriends.org/download.html) versi 7.2.28 atau lebih.
    - [PHP](https://www.php.net/) versi 7.2.28 atau lebih.
    - [Visual Studio Code](https://code.visualstudio.com/) sebagai text editor atau text editor favorit anda.
+   - [Postman](https://www.postman.com/) untuk melakukan simulasi **REST API**.
    
 ## Instalasi
    
